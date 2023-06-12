@@ -14,4 +14,4 @@ The primary objective of this project was to create a website that serves as a p
 
 The project was designed following a structured architecture to ensure efficient development and maintainability.
 
-![180971353-3891687b-4b3d-4a5f-99bb-d05083a8779f](https://github.com/teresamrsantos/gallery-portfolio/assets/109983739/eca9a52d-0863-4673-923c-aad871b7d606)
+![Screenshot from 2023-06-12 14-34-03](https://github.com/teresamrsantos/gallery-portfolio/assets/109983739/6b81a16a-465f-47f8-a086-2486905a88f5)
