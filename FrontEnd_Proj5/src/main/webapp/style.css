@@ -1,0 +1,887 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f2f2f2;
+}
+
+/***********************************************/
+/************** MENU DE NAVEGAÇÃO *************/
+/**********************************************/
+
+#navbar {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+nav {
+  background: #feffff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 100px;
+  font-family: "Nunito", sans-serif;
+}
+
+nav .logo {
+  color: #310052;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+  letter-spacing: -1px;
+}
+nav .nav-items {
+  display: flex;
+  flex: 1;
+  padding: 0 0 0 40px;
+}
+nav .nav-items button {
+  list-style: none;
+  padding: 0 15px;
+}
+
+nav form {
+  display: flex;
+  height: 40px;
+  padding: 2px;
+  background: #ffffff;
+  min-width: 18% !important;
+  border-radius: 2px;
+  border: 1px solid rgba(155, 155, 155, 0.2);
+}
+
+nav form .search-data {
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  color: #8828ee;
+  font-size: 17px;
+  border: none;
+  font-weight: 500;
+  background: none;
+}
+nav form button {
+  padding: 0 15px;
+  color: #fff;
+  font-size: 17px;
+  background: #14007a;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+nav form button:hover {
+  background: #7cc679;
+}
+
+nav .search-icon {
+  width: 40px;
+  text-align: center;
+  margin: 0 50px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+nav .search-icon {
+  display: none;
+}
+
+/***********************************************************/
+/*************************BOTOES NAV***********************/
+/**********************************************************/
+
+.buttonNav {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2em;
+  font-weight: 900;
+  color: black;
+  z-index: 2;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  background: linear-gradient(to right, crimson, pink, springgreen);
+  animation: rainbow 2s ease-in-out infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 1);
+  display: block;
+  transition: color 0.5s ease-in-out;
+}
+
+.buttonNav:hover {
+  color: rgba(0, 0, 0, 0);
+}
+
+/********************************************/
+/************** USER BUTTON ON NAV *************/
+/**********************************************/
+
+.dropdownUser {
+  position: relative;
+  display: none;
+  z-index: 3;
+  margin-left: 0%;
+}
+
+.dropdown-contentUser {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+}
+
+.dropdown-contentUser button {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  z-index: 3;
+  margin: 20px;
+  width: max-content;
+}
+
+.dropdown-contentUser button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.dropdownUser:hover .dropdown-contentUser {
+  display: block;
+}
+
+.dropdownUser:hover {
+  cursor: pointer;
+  color: #7cc679;
+}
+
+/********************************************/
+/************** user Profile Button*************/
+/**********************************************/
+
+.userProfileButton,
+.LogoutButton {
+  background-color: #fafafa;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  margin-right: -0.5em;
+  padding-top: -2em;
+  padding-bottom: -2em;
+  display: none;
+}
+
+.LogoutButton:hover {
+  cursor: pointer;
+  color: #2ab1b6;
+}
+
+.userProfileButton:hover {
+  cursor: pointer;
+  color: #682acb;
+}
+
+/********************************************/
+/************** MENU DROPDOWN*************/
+/**********************************************/
+.dropbtn {
+  background-color: #fafafa;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  margin-right: 1em;
+  padding-top: -2em;
+  padding-bottom: -2em;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 3;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  z-index: 3;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  text-decoration: underline;
+  z-index: 3;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  cursor: pointer;
+  color: #7cc679;
+}
+
+/**********************************************************/
+/************************ BOTOES LINGUA *******************/
+/*******************************************************/
+.dropdown-content img {
+  pointer-events: none;
+  max-width: 55%;
+  max-height: 55%;
+  object-fit: contain;
+  margin: 0.5em;
+}
+.en,
+.pt {
+  width: 100%;
+  border: none;
+  background-color: #feffff;
+}
+
+.en:hover,
+.pt:hover {
+  cursor: pointer;
+  background-color: #08040141;
+}
+/***************************************************/
+/***************   Slide-Show *********************/
+/**************************************************/
+.containerSlides {
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 0;
+}
+/* Centered text */
+.textSlides {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+  font-size: larger;
+}
+.textSlides h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(255, 249, 249);
+  font-size: 3.5em;
+  letter-spacing: 0.01em;
+  text-align: center;
+  font-weight: bolder;
+}
+.imgSlideShow {
+  height: 20em;
+}
+
+.mySlides {
+  height: 100%;
+  background-color: #fafafa;
+}
+/***************************************************/
+/*************** USER INFO - Slide-Show *********************/
+/**************************************************/
+
+.myUserImage {
+  background: url("https://cutewallpaper.org/23/abstract-art-wallpaper-desktop-paint/2089732415.jpg");
+  background-repeat: round;
+  background-size: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.userInfoContainer {
+  display: none;
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 0;
+  overflow: auto;
+  text-shadow: 0.02em 0 black, 0 0.02em black, -0.02em 0 black, 0 -0.02em black;
+}
+
+.userInfoContainer h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(255, 249, 249);
+  font-size: 3.5em;
+  margin-left: 1%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  font-weight: bolder;
+  display: inline;
+}
+
+.userInfoContainer h4 {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  color: #080401;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: 2%;
+  margin-left: 4%;
+}
+
+/* Centered text */
+.textUserInfo {
+  display: flex;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.imgSlideUSER {
+  height: 20em;
+}
+
+/**************************************************/
+/*****************Buttons To Login*****************/
+/**************************************************/
+#user-items {
+  position: sticky;
+  top: 52px;
+  z-index: 1;
+}
+.user-items {
+  display: none;
+}
+
+.loginButtonIndex,
+.registerButtonIndex {
+  font-family: "Nunito", sans-serif;
+  border-radius: 10px;
+  border: none;
+  padding: 10px 10px;
+  width: 150px;
+  transform: translate(-50%, -50%);
+  color: #14007a;
+  font-weight: 800;
+}
+
+.registerButtonIndex {
+  position: absolute;
+  top: 20%;
+  left: 8%;
+}
+
+.loginButtonIndex {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+
+.loginButtonIndex:hover,
+.registerButtonIndex:hover {
+  cursor: pointer;
+  background-color: #95a3b3;
+}
+
+.closeButtonLoginForm,
+.closeButtonregisterForm {
+  cursor: pointer;
+  background-color: #08040100;
+  color: #d25d48;
+  border: none;
+  padding: 5em;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 10px;
+  position: absolute;
+  top: 8%;
+  left: 80%;
+  z-index: 2;
+}
+
+.closeButtonLoginForm:hover,
+.closeButtonregisterForm:hover {
+  color: #f1f1f1;
+}
+
+.fa-times,
+.fa-search {
+  pointer-events: none;
+}
+
+/**************************************************/
+/*****************Login Form***********************/
+/**************************************************/
+
+.loginFormDiv {
+  display: none;
+  font-family: "Nunito", sans-serif;
+  width: 100%;
+  height: 100%;
+  background: #0101019f;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.loginForm {
+  width: 50%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.loginForm input {
+  height: 35px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: white solid 2px;
+  margin-bottom: 0%;
+  padding-left: 0.8em;
+  width: 50%;
+  text-align: start;
+  position: relative;
+  top: 50%;
+}
+
+.loginForm label {
+  display: flex;
+  line-height: 1.5em;
+  margin: 1%;
+  margin-left: -2%;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: rgb(254, 254, 254);
+  letter-spacing: 0.08em;
+  position: relative;
+  top: 50%;
+  left: 25%;
+}
+
+.errorLogin {
+  border: 2px solid #d33030;
+  border-radius: 2px;
+  background-color: #d33030b9;
+  color: #22162b;
+  font-weight: bold;
+  display: none;
+  word-wrap: break-word;
+  padding: 5px;
+  position: relative;
+  top: 0.5em;
+  left: 0em;
+  margin-bottom: 1%;
+}
+
+.loginForm button {
+  background: #5e02f7;
+  display: inline-block;
+  font-size: 16px;
+  height: 50px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px 40px;
+  position: relative;
+  width: 10em;
+  top: 1em;
+  left: 6em;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+}
+
+.loginForm button:hover {
+  background: white;
+  color: #5e02f7;
+  transition: 0.2s;
+}
+
+/**************************************************/
+/*****************Register Form***********************/
+/**************************************************/
+.registerFormDiv {
+  display: none;
+  font-family: "Nunito", sans-serif;
+  width: 100%;
+  height: 100%;
+  background: #010101c2;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.registerFormDiv form {
+  margin-top: 4%;
+  display: table;
+}
+
+.registerFormDiv input {
+  font-size: medium;
+  font-weight: bold;
+  height: 2.3em;
+  border-radius: 12px;
+  padding-bottom: 0.2em;
+  padding-left: 0.5em;
+  padding-right: 2em;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+  display: table-cell;
+}
+
+.registerFormDiv label {
+  font-size: large;
+  display: table-cell;
+}
+
+.firstColumn {
+  position: absolute;
+  left: 15%;
+}
+
+.secondColumn {
+  position: absolute;
+  left: 38%;
+}
+
+.thirdColumn {
+  position: absolute;
+  left: 62%;
+}
+
+.firstRowRegister {
+  margin-bottom: 0.2em;
+}
+
+.btn-register {
+  background: #5e02f7;
+  display: inline-block;
+  font-size: 16px;
+  height: 30px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  position: absolute;
+  width: 14em;
+  top: 64%;
+  left: 62%;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+}
+
+.btn-register:hover {
+  background: #eb5c60;
+  color: #ffffff;
+  transition: 0.2s;
+}
+
+.biographyRegister {
+  font-size: smaller;
+  width: 20em;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 0.5em;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+  display: table-cell;
+}
+
+.error-register,
+.error-mandatory {
+  border: 2px solid #d33030;
+  border-radius: 2px;
+  background-color: #d33030b9;
+  color: #ffffff;
+  font-weight: 500;
+  word-wrap: break-word;
+  padding: 2px;
+  max-height: 90px;
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
+.error-mandatory {
+  position: relative;
+  top: 12em;
+  left: 62em;
+  width: 350px;
+  display: none;
+}
+.successRegister {
+  font-family: "Nunito", sans-serif;
+  width: 100%;
+  height: 100%;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  padding-top: 40px;
+  text-align: center;
+  align-items: center;
+  display: none;
+}
+
+.error-register {
+  position: relative;
+  top: 12em;
+  left: 64em;
+  width: 260px;
+  display: none;
+}
+
+/*****************************************************************************************************/
+/************************************** NEWS INDEX ***************************************************/
+/*****************************************************************************************************/
+
+.newsListTitleIndex {
+  display: flex;
+  justify-content: start;
+  margin-top: 3%;
+  margin-left: 3%;
+  width: 90%;
+  color: #080401;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.indexNews {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 1%;
+  padding: 0.5em;
+  max-height: 200em;
+
+  display: grid;
+  gap: 10px 10px;
+  grid-template-columns:
+    minmax(auto, 1fr)
+    minmax(auto, 1fr)
+    minmax(auto, 1fr)
+    minmax(auto, 1fr);
+}
+
+.divEachNewsIndex {
+  flex: 1 0 auto;
+  position: relative;
+  width: 100%;
+  height: 350px;
+  flex-grow: 1;
+  margin-bottom: 0;
+  border: none;
+  border-radius: 2px;
+  background: #fff;
+  box-shadow: #080401;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 8%), 0 1px 2px rgb(0 0 0 / 20%);
+  transition: box-shadow 0.25s;
+  max-width: 100%;
+}
+
+.creationDateIndex {
+  font-size: smaller;
+  position: absolute;
+  bottom: 5em;
+  left: 30%;
+}
+.titleNewsIndex {
+  margin: 0em 1.5em 0em 1em;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.coverImgNewsIndex {
+  margin: 1.2em;
+  max-width: 100%;
+  max-height: 100%;
+  border-style: solid;
+  border-color: rgba(128, 128, 128, 0.233);
+  width: 120px;
+  height: 112px;
+}
+
+.buttonNewsDetailsIndex,
+.buttonEditNews {
+  cursor: pointer;
+  position: absolute;
+  bottom: 2em;
+  left: 2em;
+  border-radius: 10px;
+  border: none;
+  padding: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: #d25d489f;
+  color: #343b52;
+  font-weight: 400;
+}
+
+.buttonEditNews {
+  cursor: pointer;
+  position: absolute;
+  bottom: 2em;
+  left: 18em;
+}
+
+.buttonNewsDetailsIndex:hover,
+.buttonEditNews:hover {
+  background-color: #071e36;
+  color: white;
+  transition: 0.8s;
+}
+
+/******************************************************************************/
+/*****************************ERRO GERAL****************************************/
+/******************************************************************************/
+
+.generalError {
+  font-family: "Nunito", sans-serif;
+  width: 100%;
+  height: 20em;
+  background: #dd0808c2;
+  position: relative;
+  top: 10%;
+  left: 0%;
+  z-index: 6;
+  text-align: center;
+  display: none;
+}
+
+.generalError h1 {
+  display: block;
+  font-size: 2rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  position: relative;
+  top: 20%;
+  left: 0%;
+  z-index: 6;
+}
+
+/**********************************************/
+/* PARTE DO ADMIN NA PAGINA INDEX */
+.fa-trash-restore,
+.fa-trash {
+  pointer-events: none;
+}
+
+.trash-btn-deleteNews {
+  cursor: pointer;
+  position: absolute;
+  top: 0.5em;
+  left: 22em;
+  border-radius: 10px;
+  border: none;
+  padding: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: #ffffff;
+  color: #4e385e;
+  font-weight: 400;
+}
+
+.trash-btn-deleteNews:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #310736c4;
+}
+
+.deleteNews,
+.deleteProject {
+  background-color: #0804017b;
+}
+
+.trash-btn-editProject {
+  background-color: #0804017b;
+  color: white;
+}
+
+.deleteNews .trash-btn-deleteNews {
+  background-color: #0804017b;
+  color: white;
+}
+
+.deleteNews .trash-btn-deleteNews:hover {
+  background-color: #ffffff7b;
+  color: white;
+}
+
+.invisibleNews {
+  background-color: #31073638;
+  padding: 5px;
+}
+
+.invisibleNews p {
+  position: relative;
+  top: 0.5em;
+  background-color: #170119b5;
+  color: white;
+
+}
+
+.deleteProjectPublicProjects {
+  text-decoration: line-through;
+}
+
+.noNews-index {
+  padding: 10px;
+  border: solid #010d18;
+  background-color: #220f6698;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: white;
+  height: 50px;
+  width: 40%;
+  text-align: center;
+  margin-left: 42%;
+  font-size: 1.5em;
+  border-radius: 12px;
+  display: none;
+}
+
+.noProjects-publicprojectsdiv {
+  padding: 10px;
+  border: solid #132502;
+  background-color: #12660f98;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: white;
+  height: 50px;
+  width: 40%;
+  text-align: center;
+  margin-top: 2%;
+  margin-left: 32%;
+  font-size: 1.5em;
+  border-radius: 12px;
+  display: none;
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Your one only source into LoremIpsum...</title>
+</head>
+
+<body>
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleProjects.css" />
+    <script src="https://kit.fontawesome.com/a145bb4fe3.js" crossorigin="anonymous"></script>
+
+    <script type="module"  src="generalScript.js"></script>
+    <script type="module"  src="detailsNews.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;1,200;1,300&display=swap"
+      rel="stylesheet" />
+  </head>
+
+  <body class="detailsNewstHTML">
+    <div id="navbar">
+
+
+      <nav>
+        <!-- LOGO E MENU DE NAVEGAÇÃO -->
+        <div class="logo">LoremIpsum</div>
+        <div class="nav-items">
+          <button data-i18n="home" class="buttonNav homeBtn">Home</button>
+           <button data-i18n="OurProjects" class="buttonNav ourProjectsBtn">Projects</button>
+           <button data-i18n="OurTeam" class="buttonNav ourTeamBtn"">Our Team</button>
+          <div class=" dropdownUser"> <button data-i18n="myAccount"  class="buttonNav userNavBtn">My Account</button>
+              <div class="dropdown-contentUser" id="dropdown-content">
+                <button data-i18n="addProject" class="buttonUser addProject">Add Project</button>
+                <button data-i18n="myProjects" class="buttonUser myProjects">My projects</button>
+                <button data-i18n="addNews" class="buttonUser addNews">Add News</button>
+                <button data-i18n="myNews" class="buttonUser myNews">My news</button>
+                <button data-i18n="adminButton" class="buttonAdmin">Admin Controller</button>
+              </div>
+        </div>
+    </div>
+
+           <!-- botao perfil de user -->
+           
+              <div class=" userProfileButtonDIV">
+              <button class="userProfileButton"> <i class="fa fa-user" aria-hidden="true"></i></button>
+        </div>
+
+        <!-- botao LOGOUT -->
+        <div class=" LogoutButtonDIV">
+          <button class="LogoutButton"> <i class="fa fa-sign-out" aria-hidden="true"></i></button>
+        </div>
+        <!-- menu Linguas -->
+        <div class=" dropdown">
+          <button class="dropbtn"><i class="fa fa-globe" aria-hidden="true"></i></button>
+          <div class="dropdown-content" id="dropdown-content">
+            <button name="lang" class="en" value="en" /><img
+              src="https://raw.githubusercontent.com/lipis/flag-icons/c1efa9d9a94d62a4da54916f4061cbf9bbadff1d/flags/4x3/gb.svg"
+              alt="">
+            </button>
+            <button name="lang" class="pt" value="pt" /> <img
+              src="https://raw.githubusercontent.com/lipis/flag-icons/c1efa9d9a94d62a4da54916f4061cbf9bbadff1d/flags/4x3/pt.svg"
+              alt=""> </button>
+          </div>
+        </div>
+
+      <!-- Formulario de procura -->
+      <div class="formSearch">
+        <form action="#">
+          <input type="search" class="search-data" required />
+          <button class="search-lupa" type="submit" aria-hidden="true"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </form>
+      </div>
+      </nav>
+    </div>
+
+
+    <!-- Automatic Slideshow Images -->
+
+
+    <!-- ERRO GERAL -->
+    <div class="generalError">
+      <h1 data-i18n="errorGeneral"> Sorry. The internet has failed you. <br>
+        We will redirect you to the index page, shortly.</h1>
+    </div>
+
+    <!-- USER LOGGADO -->
+    <!--<div class=userInfoContainer>
+      <div class="myUserImage">
+        <img class="imgSlideUSER" />
+        <div class="textUserInfo">
+          <h3 data-i18n="welcomeBack">Welcome,</h3>
+          <h3 class="usernameUser"></h3>
+          <!-- <h4 data-i18n="WhatToday">What Do You Want to Create Today ?</h4>-->
+        <!--  </div>
+      </div>
+    </div>
+    <div class="user-items" id="user-items">
+      <li> <button data-i18n="addProject" class="buttonUser addProject">Add Project</button></li>
+      <li><button data-i18n="myProjects" class="buttonUser myProjects">My projects</button></li>
+      <li> <button data-i18n="addNews" class="buttonUser addNews">Add News</button></li>
+      <li><button data-i18n="myNews" class="buttonUser myNews">My news</button></li>
+      <li><button data-i18n="adminButton" class="buttonAdmin">Admin Controller</button></li>
+    </div>
+  -->
+    <div class="newsDetailsPageContainer">
+      <button class="backToTheMainPage" data-i18n="backToTheMainPage">
+        < Back to the main page </button>
+
+
+          <div class="newsContainerDetails">
+
+            <div class="newsDetailsTextDiv">
+
+              <div class="newsTitleDetails">
+                <h2 class="newsTitle"></h2>
+              </div>
+              
+              <div class="newsImageDIV">
+                <img class="newsImage" src="" alt="">
+              </div>
+
+              <div class="datesDIVnewsDetails">
+                <div class="creationDateDiv">
+                <label for="creationDate" class="creationDateLabel" data-i18n="creationDateLabel">Created on:</label>
+                <h6 class="creationDate"></h6></div>
+                <div class="updatedDateDiv">
+                <label for="updatedDate" class="updatedDateLabel" data-i18n="updatedDateLabel">Updated
+                  on:</label>
+                <h6 class="updatedDate"></h6></div>
+              </div>
+              
+              <div class="newsDescriptionDetails">
+
+                <p class="newsDescription"></p>
+              </div>
+              <div class="divKeyword">
+                <label for="newsKeyword" class="newsKeywordLabel" data-i18n="newsKeywordLabel">Keywords:</label>
+              </div>
+
+
+
+              <div class="divauthorsnews">
+                <div class="divAuthor">
+                  <label for="newsAuthor" class="newsAuthorLabel" data-i18n="newsAuthorLabel">Written by:</label>
+                  <h4 class="newsAuthor"></h4>
+                </div>
+                <div class="divCoauthor">
+                  <label for="newsCoauthor" class="newsCoauthorLabel" data-i18n="newsCoauthorLabel">Co-authors:</label>
+                </div>
+              </div>
+
+      
+
+              <div class="divRelatedProjects">
+                <label for="relatedProjects" class="newsrelatedProjectsLabel" data-i18n="relatedProjectsLabel">Related
+                  Projects:</label>
+              </div>
+            </div>
+
+      
+          
+          </div>
+
+
+    </div>
+
+
+  </body>
+
+  </html>
+</body>
+
+</html>

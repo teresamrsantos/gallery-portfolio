@@ -1,0 +1,85 @@
+.featured {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Nunito", sans-serif;
+  margin-top: 20px;
+}
+
+.featuredItem {
+  text-align: left;
+  flex: 1;
+  margin: 0px 20px;
+  margin-left: 2%;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.longItem{
+  font-family: "Nunito", sans-serif;
+}
+.featuredTitle {
+  color: #233675;
+  padding: 50px 7px;
+
+  font-size: 1.2em;
+  font-family: "Nunito", sans-serif;
+}
+
+.divNumber {
+  margin-left: 50%;
+  margin-top: 2%;
+  font-size: 1.5em;
+}
+
+.longItem {
+  flex: 1;
+  margin: 20px 20px;
+  padding: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.divlongItemmostRecentContentType {
+
+  font-size: large;
+margin-left: 5%;
+font-family: "Nunito", sans-serif;
+}
+
+.divlongItemmostRecentContentTitle-Title,
+.divlongItemmostRecentContentTitle-Date{
+  font-family: "Nunito", sans-serif;
+  color: #410448;
+  font-size: large;
+  margin: 10px 10px;
+  padding: 10px;
+  font-weight: bold;
+  
+}
+
+.divlongItem{
+  font-family: "Nunito", sans-serif;
+  padding-top: 10px;
+  margin-left: 10%;
+}
+
+
+.NewsTitle,
+.NewsDate,
+.divlongItemmostRecentContentTitle,
+.divlongItemmostRecentContentDate,
+.divlongItemmostRecentContentTitle-Date,
+.divlongItemostRecentPublicationTitle,
+.divlongItemmostRecentPublicationDate{
+  font-family: "Nunito", sans-serif;
+  padding-top: 10px;
+  
+}

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Your only source into lorem ipsum.</title>
+</head>
+
+<body>
+  <!DOCTYPE html>
+
+  <head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a145bb4fe3.js" crossorigin="anonymous"></script>
+    <script type="module" src="registerUser.js"></script>
+    <script type="module" src="login.js"></script>
+    <script type="module" src="generalScript.js"></script>
+    <script type="module" src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;1,200;1,300&display=swap"
+      rel="stylesheet" />
+  </head>
+
+  <body class="indexHTML">
+    <div id="navbar">
+
+
+      <nav>
+        <!-- LOGO E MENU DE NAVEGAÇÃO -->
+        <div class="logo">LoremIpsum</div>
+        <div class="nav-items">
+          <button data-i18n="home" class="buttonNav homeBtn">Home</button>
+          <button data-i18n="OurProjects" class="buttonNav ourProjectsBtn">Projects</button>
+          <button data-i18n="OurTeam" class="buttonNav ourTeamBtn"">Our Team</button>
+          <div class=" dropdownUser"> <button data-i18n="myAccount" class="buttonNav userNavBtn">My Account</button>
+            <div class="dropdown-contentUser" id="dropdown-contentUser">
+              <button data-i18n="addProject" class="buttonUser addProject">Add Project</button>
+              <button data-i18n="myProjects" class="buttonUser myProjects">My projects</button>
+              <button data-i18n="addNews" class="buttonUser addNews">Add News</button>
+              <button data-i18n="myNews" class="buttonUser myNews">My news</button>
+              <button data-i18n="adminButton" class="buttonAdmin" style="display:none">Admin Controller</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- botao perfil de user -->
+
+    <div class=" userProfileButtonDIV">
+      <button class="userProfileButton"> <i class="fa fa-user" aria-hidden="true"></i></button>
+    </div>
+
+    <!-- botao LOGOUT -->
+    <div class=" LogoutButtonDIV">
+      <button class="LogoutButton"> <i class="fa fa-sign-out" aria-hidden="true"></i></button>
+    </div>
+    <!-- menu Linguas -->
+    <div class=" dropdown">
+      <button class="dropbtn"><i class="fa fa-globe" aria-hidden="true"></i></button>
+      <div class="dropdown-content" id="dropdown-content">
+        <button name="lang" class="en" value="en" /><img
+          src="https://raw.githubusercontent.com/lipis/flag-icons/c1efa9d9a94d62a4da54916f4061cbf9bbadff1d/flags/4x3/gb.svg"
+          alt="">
+        </button>
+        <button name="lang" class="pt" value="pt" /> <img
+          src="https://raw.githubusercontent.com/lipis/flag-icons/c1efa9d9a94d62a4da54916f4061cbf9bbadff1d/flags/4x3/pt.svg"
+          alt=""> </button>
+      </div>
+    </div>
+
+    <!-- Formulario de procura -->
+    <div class="formSearch">
+      <form action="#">
+        <input type="search" class="search-data" required />
+        <button type="submit" class="btn-search" aria-hidden="true"><i class="fa fa-search"
+            aria-hidden="true"></i></button>
+      </form>
+    </div>
+    </nav>
+    </div>
+
+
+    <!-- Automatic Slideshow Images -->
+    <div class="containerSlides">
+      <div class="mySlides" style=" background: url('https://cutewallpaper.org/23/abstract-art-wallpaper-desktop-paint/2089732415.jpg');
+      background-size: 1500px;
+      background-position: center center;
+      background-repeat: no-repeat; ">
+        <img class="imgSlideShow">
+
+        <div class="textSlides">
+          <h3 data-i18n="sentenceh3-1">Support</h3>
+          <p data-i18n="sentencep-1"><b>Everything is lorem ipsum and nothing hurts.</b></p>
+        </div>
+      </div>
+      <div class="mySlides" style=" background: url('https://cutewallpaper.org/23/abstract-art-wallpaper-desktop-paint/249008907.jpg');
+      background-size: 1500px;
+      background-position: center center;
+      background-repeat: no-repeat; ">
+        <img class="imgSlideShow">
+
+        <div class="textSlides">
+          <h3 data-i18n="sentenceh3-2">Challenge</h3>
+          <p data-i18n="sentencep-2"><b>The atmosphere is lorem ipsum.</b></p>
+        </div>
+      </div>
+
+      <div class="mySlides" style=" background: url('https://projectartworks.org/wp-content/uploads/2021/08/Screenshot-2021-08-31-at-10.38.04.png');
+      background-size: 1600px;
+      background-position: center center;
+      background-repeat: no-repeat; ">
+        <img class="imgSlideShow">
+        <div class="textSlides">
+          <h3 data-i18n="sentenceh3-3">Comunity</h3>
+          <p data-i18n="sentencep-3"><b>Art, Human connection and what it reveals about lorem ipsum.</b></p>
+        </div>
+      </div>
+
+
+
+      <!-- LOGIN FORM  -->
+      <div class="buttonsLoginRegister">
+        <button data-i18n="loginButtonIndex" class="loginButtonIndex">Login</button>
+        <button data-i18n="registerButtonIndex" class="registerButtonIndex">Register here </button>
+      </div>
+      <!-- Login Form -->
+      <div class="loginFormDiv">
+        <button class="closeButtonLoginForm" aria-hidden="true">
+          <i class="fa fa-times"></i>
+        </button>
+        <form action="login" class="loginForm">
+          <label for="usernameLogin" data-i18n="loginUsername"> Username:</label>
+          <input class="usernameLogin" type="text" autofocus="" required id="id_username"
+            style="position:relative; margin-left: 2%;" />
+          <br />
+          <label for="passwordLogin" data-i18n="loginPassword"> Password:</label>
+          <input class="passwordLogin" type="password" name="password" required id="id_password" />
+          <i class="fa fa-light fa-eye" id="togglePassword"
+            style="position:relative; margin-left:-5%; cursor: pointer; color: black;"></i>
+
+          <br />
+          <span class="errorLogin" data-i18n="loginError"> Invalid username or password. <br> Please try again. </span>
+          <br />
+          <button type="submit" class="btnLogin">Login</button>
+        </form>
+      </div>
+
+
+      <!-- Register Form -->
+      <div class="registerFormDiv">
+        <button class="closeButtonregisterForm" aria-hidden="true"> <i class="fa fa-times"></i>
+        </button>
+        <form action="register" class="registerForm">
+          <div class="firstColumn">
+            <label for="firstName" data-i18n="firstName">*First Name:</label>
+            <input class="firstNameRegister" type="text" name="text" required id="id_firstName" />
+            <br>
+            <label for="lastName" data-i18n="lastName">*Last Name:</label>
+            <input class="lastNameRegister" type="text" name="text" required id="id_lastName" />
+            <br>
+            <label for="emailRegister" data-i18n="emailRegister">*Email:</label>
+            <input class="emailRegister" type="text" name="text" required id="id_email" />
+            <br>
+          </div>
+          <div class="secondColumn">
+            <label for="pictureRegister" data-i18n="pictureRegister">Picture:</label>
+            <input class="pictureRegister" type="text" autofocus="" required id="id_pictureRegister" />
+
+            <label for="usernameRegister" data-i18n="usernameRegister">*Username:</label>
+            <input class="usernameRegister" type="text" autofocus="" required id="id_usernameRegister" />
+            <br>
+            <label for="passwordRegister" data-i18n="passwordRegister">*Password:</label>
+            <input id="passwordRegister" class="passwordRegister" type="password" name="password" required
+              id="id_password" />
+
+            <i class="fa fa-light fa-eye" id="togglePassword2"
+              style="position:relative; margin-left:-12%; cursor: pointer; color: black;"></i>
+            <br>
+          </div>
+          <div class="thirdColumn">
+            <label for="biographyRegister" data-i18n="biographyRegister"> Tell us about you:</label>
+            <textarea class="biographyRegister" name="text" rows="6" cols="25" wrap="soft"> </textarea>
+          </div>
+          <button type="submit" class="btn-register" data-i18n="btn-register">Register</button>
+          <span data-i18n="error-register" class="error-register">Something went wrong.<br>Please, try again.</span>
+          <span data-i18n="error-mandatory" class="error-mandatory">Please, fill the mandatory fields(*)<br> and try
+            again.</span>
+          <h1 data-i18n="successRegister" class="successRegister"><br>Thank you for your registration.<br>Our team will
+            approve it soon. </h1>
+
+        </form>
+      </div>
+    </div>
+
+
+    <!-- ERRO GERAL -->
+    <div class="generalError">
+      <h1 data-i18n="errorGeneral"> Sorry. The internet has failed you. <br>
+        We will redirect you to the index page, shortly.</h1>
+    </div>
+
+    <!-- USER LOGGADO -->
+    <div class=userInfoContainer>
+      <div class="myUserImage">
+        <img class="imgSlideUSER" />
+        <div class="textSlides">
+          <h3 data-i18n="sentenceUser">You</h3>
+          <p data-i18n="sentenceUserP"><b>You are lorem ipsum.</b></p>
+        </div>
+        <div class="textUserInfo">
+          <h3 data-i18n="welcomeBack">Welcome,</h3>
+          <h3 class="usernameUser"></h3>
+          <!-- <h4 data-i18n="WhatToday">What Do You Want to Create Today ?</h4>-->
+        </div>
+      </div>
+    </div>
+    <div class="newsListTitleIndex">
+      <h1 data-i18n="LatestNews">Latest News ...</h1>
+    </div>
+
+    <div class="noNews-indexdiv"> <span data-i18n="NoNews" class="noNews-index">No news to present.</span></div>
+    <div class="indexNews"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+      // Automatic Slideshow - change image every 4 seconds
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 4000);
+      }
+
+
+      const togglePassword = document.querySelector("#togglePassword");
+      const password = document.querySelector("#id_password");
+
+      togglePassword.addEventListener("click", function (e) {
+        // toggle the type attribute
+        const type =
+          password.getAttribute("type") === "password"
+            ? "text"
+            : "password";
+        password.setAttribute("type", type);
+        // toggle the eye slash icon
+        this.classList.toggle("fa-eye-slash");
+      });
+
+
+      const togglePassword2 = document.querySelector("#togglePassword2");
+      const passwordRegister = document.querySelector("#passwordRegister");
+
+      togglePassword2.addEventListener("click", function (e) {
+        // toggle the type attribute
+        const type =
+          passwordRegister.getAttribute("type") === "password"
+            ? "text"
+            : "password";
+        passwordRegister.setAttribute("type", type);
+        // toggle the eye slash icon
+        this.classList.toggle("fa-eye-slash");
+      });
+
+    </script>
+  </body>
+
+</html>
+</body>
+
+</html>

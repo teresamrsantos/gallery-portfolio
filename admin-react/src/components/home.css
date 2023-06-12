@@ -1,0 +1,72 @@
+.mySlides {
+  background: url("https://cutewallpaper.org/23/abstract-art-wallpaper-desktop-paint/2089732415.jpg");
+  background-size: 1500px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* Centered text */
+
+.textSlides h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 3.5em;
+  letter-spacing: 0.01em;
+  text-align: center;
+  font-weight: bolder;
+  position: static;
+  float: left;
+  margin-top: -16%;
+  margin-left: 5%;
+}
+.imgSlideShow {
+  height: 20em;
+}
+
+.userGreeting {
+  font-family: "Nunito", sans-serif;
+  color: rgb(0, 0, 0);
+  position: static;
+  float: left;
+  margin-top: -6%;
+  width: 100%;
+  margin-left: 4%;
+  font-size: 1.5em;
+}
+
+.ButtonListVisitorsDIV {
+float: right;
+margin-top: -5%;
+margin-right: 4%;
+}
+
+.ButtonManageUsersDIV {
+  float: right;
+  margin-top: -5%;
+  margin-right: 18%;
+  }
+
+/* CSS */
+.buttonAccept {
+  font-family: "Nunito", sans-serif;
+  margin-left: 2%;
+  margin-bottom: 8%;
+}
+
+.buttonAccept {
+  cursor: pointer;
+  float: left;
+  width: 12em;
+  height: 50px;
+  background-color: #ffffff;
+  color: rgb(1, 51, 94);
+  border-radius: 10px;
+  font-weight: bold;
+  border: none;
+}
+
+.buttonAccept:hover {
+  background-color: rgb(227, 178, 237);
+  color: #230225;
+}

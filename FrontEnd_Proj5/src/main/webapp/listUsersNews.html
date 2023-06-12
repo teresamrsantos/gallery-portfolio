@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="addProject_News.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a145bb4fe3.js" crossorigin="anonymous"></script>
+
+
+    <script type="module" src="generalScript.js"></script>
+    <script type="module" src="listUsersNews.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;1,200;1,300&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body class="listUserNewsHTML">
+    <div id="navbar">
+        <nav>
+            <!-- LOGO E MENU DE NAVEGAÇÃO -->
+
+            <div class="logo">LoremIpsum</div>
+            <div class="nav-items">
+                <button data-i18n="home" class="buttonNav homeBtn">Home</button>
+                <button data-i18n="OurProjects" class="buttonNav ourProjectsBtn">Projects</button>
+                <button data-i18n="OurTeam" class="buttonNav ourTeamBtn">Our Team</button>
+                <div class=" dropdownUser"> <button data-i18n="myAccount" class="buttonNav userNavBtn">My
+                        Account</button>
+                    <div class="dropdown-contentUser" id="dropdown-contentUser">
+                        <button data-i18n="addProject" class="buttonUser addProject">Add Project</button>
+                        <button data-i18n="myProjects" class="buttonUser myProjects">My projects</button>
+                        <button data-i18n="addNews" class="buttonUser addNews">Add News</button>
+                        <button data-i18n="myNews" class="buttonUser myNews">My news</button>
+                        <button data-i18n="adminButton" class="buttonAdmin">Admin Controller</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- botao perfil de user -->
+            <div class=" userProfileButtonDIV">
+                <button class="userProfileButton"> <i class="fa fa-user" aria-hidden="true"></i></button>
+            </div>
+            <!-- botao LOGOUT -->
+            <div class=" LogoutButtonDIV">
+                <button class="LogoutButton"> <i class="fa fa-sign-out" aria-hidden="true"></i></button>
+            </div>
+            <!-- menu Linguas -->
+            <div class=" dropdown">
+                <button class="dropbtn"><i class="fa fa-globe" aria-hidden="true"></i></button>
+                <div class="dropdown-content" id="dropdown-content">
+                    <button name="lang" class="en" value="en"><img
+                            src="https://raw.githubusercontent.com/lipis/flag-icons/c1efa9d9a94d62a4da54916f4061cbf9bbadff1d/flags/4x3/gb.svg"
+                            alt="">
+                    </button>
+                    <button name="lang" class="pt" value="pt"> <img
+                            src="https://raw.githubusercontent.com/lipis/flag-icons/c1efa9d9a94d62a4da54916f4061cbf9bbadff1d/flags/4x3/pt.svg"
+                            alt=""> </button>
+                </div>
+            </div>
+
+        </nav>
+    </div>
+
+    <!-- ERRO GERAL -->
+    <div class="generalError">
+        <h1 data-i18n="errorGeneral"> Sorry. The internet has failed you. <br>
+            We will redirect you to the index page, shortly.</h1>
+    </div>
+    <div class="newsListContainer">
+        <h1 data-i18n="newsThatYouCreated"> News that you created:</h1>
+        <div class="noNews-listUserNewsdiv"> <span data-i18n="NoNews" class="noNews-listUserNews" >No news to present.</span></div>
+        <div class="listNewsContainer">
+
+        </div>
+
+        <h1 data-i18n="newsAssociatedContainer"> News that you've been associated:</h1>
+        <div class="noNews-listUserNewsMembersdiv"> <span data-i18n="NoNews" class="noNews-listUserNewsMembers" >No news to present.</span></div>
+        <div class="listNewsAssociatedContainer">
+
+        </div>
+    </div>
+    <div class=" errorAddingProject" data-i18n="errorAddingProject"> An error has ocurred. Sorry. Please, try again
+        later.</div>
+</body>
+
+</html>

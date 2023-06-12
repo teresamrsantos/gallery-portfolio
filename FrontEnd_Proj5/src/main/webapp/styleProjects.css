@@ -1,0 +1,424 @@
+/**********************************************************/
+/***********************PAGINA PROJETOS*******************/
+/**********************************************************/
+
+.slideOurProjects {
+  background: url("https://s32625.pcdn.co/wp-content/uploads/2018/04/GettyImages-158315317-1024x683.jpg");
+  background-size: 1520px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.slideOurProjects h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 3.5em;
+  letter-spacing: 0.01em;
+  text-align: center;
+  font-weight: bolder;
+  /*text-shadow:
+  0.01em 0 #000000,
+  0 0.01em #000000,
+  -0.01em 0 #000000,
+  0 -0.01em #000000;*/
+}
+
+.projectListUL {
+  width: 100%;
+  height: auto;
+  margin-top: 0%;
+  padding: 12px;
+  flex: 1 0 auto;
+  display: block;
+  margin-bottom: 10px;
+  overflow: none;
+  overflow-wrap: break-word;
+  position: absolute;
+  background: #fff;
+  box-shadow: #080401;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 8%), 0 1px 2px rgb(0 0 0 / 20%);
+  transition: box-shadow 0.25s;
+}
+
+.coverImgProj {
+  max-width: 50%;
+  min-height: 100%;
+  width: 740px;
+  height: 340px;
+  float: right;
+  margin: 0px 0px 0px 0;
+}
+
+/********************* li cada projeto ********************************/
+.liProj {
+  font-family: "Nunito", sans-serif;
+  border: 0 solid #ccc;
+  background: #dad9da;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin-bottom: 2%;
+  text-align: justify;
+}
+
+.liProj h2 {
+  font-size: 2.5em;
+  color: #053675;
+  margin-left: 2%;
+  margin-top: -2%;
+}
+.liProj p {
+  color: black;
+  padding-left: 1em;
+  margin: 1%;
+  width: 52%;
+}
+
+.liProj h6 {
+  color: black;
+  margin-left: 1%;
+  padding-left: 1em;
+  margin-top: 0%;
+  margin-bottom: 2%;
+  font-size: larger;
+}
+
+.buttonProj,
+.buttonProjectEdit,
+.buttonProjectEdit-publicProjects,
+.trash-btn-ListProjects {
+  background: none;
+  border: none;
+  padding-top: 20px;
+  cursor: pointer;
+  font-size: large;
+  position: relative;
+  top: 16em;
+}
+
+.buttonProjectEdit-publicProjects {
+  margin-right: 0.5%;
+  margin-left: 1%;
+}
+
+.buttonProj {
+  margin-left: 42%;
+}
+
+.buttonProjectEdit,
+.trash-btn-ListProjects {
+  margin-left: 1%;
+}
+.trash-btn-ListProjects {
+margin-left: 1%;
+}
+
+.liProj button:hover {
+  transition: 0.5s;
+  text-decoration: underline;
+}
+
+.buttonProjectEdit:hover,
+.trash-btn-ListProjects:hover,
+.buttonProjectEdit-publicProjects:hover {
+  color: rgb(160, 153, 153);
+  transition: 0.5s;
+}
+
+.divProj {
+  padding-right: 8em;
+  font-size: medium;
+}
+
+.fa-pencil-square-o {
+  pointer-events: none;
+}
+/**********************************************************/
+/*********************PAGINA DETALHES PROJETO ***********/
+/**********************************************************/
+
+.backToOurProjects,
+.backToTheMainPage {
+  font-family: publico, Georgia, serif;
+  position: absolute;
+  top: 4.8em;
+  left: 2em;
+  font-size: 1.2em;
+  font-weight: 900;
+  color: black;
+  z-index: 2;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.backToOurProjects:hover,
+.backToTheMainPage:hover {
+  text-decoration: underline;
+}
+
+.projectContainerDetails {
+  position: fixed;
+  top: 65%;
+  left: 50%;
+  padding: 11px;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+  overflow: none;
+  background: #dad9da;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: grid;
+  font-family: "Nunito", sans-serif;
+}
+
+.projectContainerDetails {
+  height: 120%;
+  margin-top: 7%;
+  text-align: justify;
+}
+
+.projectTitleDetails {
+  position: static;
+  margin-top: 2%;
+}
+.projectImage {
+  padding: 15px;
+  width: 550px;
+  height: 300px;
+  float: right;
+}
+
+.projectDetailsTextDiv {
+  margin-top: -32%;
+  padding-left: 1em;
+  padding-top: 1em;
+}
+
+.projectContainerDetails label {
+  display: inline;
+  font-size: 1em;
+  font-weight: 900;
+  color: #441444;
+}
+
+.projectTitle {
+  margin-left: 4%;
+  font-size: 2em;
+}
+
+.projectDescriptionDetails {
+  font-family: "Nunito", sans-serif;
+  word-wrap: break-word;
+  margin-top: 2%;
+  width: 54%;
+  height: 15em;
+}
+
+.divKeywordProject {
+}
+
+.divauthorsProject {
+  margin-left: 65%;
+  margin-top: -2%;
+}
+.keywordProject {
+  left: 250px;
+  color: #725f7e;
+  font-size: 15px;
+  padding: 6px 12px;
+  border-radius: 12px;
+  justify-content: space-between;
+}
+
+.projectDescription,
+.projectAuthor {
+  display: inline;
+}
+
+.keywordProject:hover,
+.coauthorProject:hover {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.coauthorProject {
+  display: block;
+  margin-left: 20px;
+}
+
+.datesDIVprojectDetails {
+  margin-left: 85%;
+  margin-top: -18.5%;
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  padding: 10px;
+  width: 20%;
+}
+
+.divRelatedNews {
+  margin-left: 1%;
+  margin-top: -22%;
+}
+
+.divRelatedNews ul {
+  display: grid;
+  margin-left: 2%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-flow: column;
+  gap: 10px 10px;
+}
+
+.itemNewsLi {
+  list-style-type: none;
+}
+
+/********************************************************************/
+/**************************  DETALHES NEWS **************************/
+/********************************************************************/
+.backToTheMainPage {
+  top: 5em;
+  left: 3em;
+}
+
+.newsContainerDetails {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  padding: 11px;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+  overflow: none;
+  background: #dad9da;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: grid;
+  font-family: "Nunito", sans-serif;
+}
+
+.newsImage {
+  margin: 2%;
+  margin-top: 3%;
+  width: 350px;
+  height: 250px;
+  float: center;
+  max-width: 350px;
+  box-shadow: 10px 5px 5px gray;
+}
+
+.newsTitle {
+  padding: 10px;
+  margin: auto;
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.datesDIVnewsDetails {
+  margin-top: -24.5%;
+  margin-left: 12%;
+  width: 80%;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+
+.creationDateDiv,
+.updatedDateDiv {
+  display: inline-block;
+  width: 18em;
+  vertical-align: middle;
+}
+
+.datesDIVnewsDetails label {
+  float: left;
+  width: 6em;
+  color: #080401;
+}
+.divauthorsnews label {
+  font-weight: 900;
+}
+
+.updatedDate,
+.creationDate {
+  margin-top: 1.6%;
+  margin-bottom: 0.5%;
+}
+
+.newsDescriptionDetails {
+  text-align: justify;
+  flex: 3;
+  padding: 10px;
+  width: 62%;
+  margin-top: -1%;
+  margin-left: 30%;
+}
+.newsDescription {
+  text-align: justify;
+}
+
+.divKeyword {
+  width: 100%;
+  margin-top: 25%;
+  margin-left: 28%;
+}
+
+.divKeyword label {
+  margin-left: 2%;
+}
+
+.divauthorsnews {
+  margin-left: 4%;
+  margin-top: -10%;
+}
+
+.divCoauthor {
+  display: block;
+}
+.newsAuthor {
+  display: inline;
+  font-weight: 100;
+}
+
+.keywordNews {
+  width: 100%;
+  left: 25px;
+  color: #725f7e;
+  font-size: 15px;
+  padding: 6px 12px;
+}
+.keywordNews:hover,
+.coauthorNews:hover {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.newsrelatedProjectsLabel {
+  padding-bottom: 0;
+}
+
+.divRelatedProjects {
+  margin-top: -15%;
+  margin-left: 30%;
+}
+
+.divRelatedProjects ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-flow: column;
+  gap: 5px 10px;
+}
+
+.divTitleProject {
+  margin-left: 2%;
+}
+
+.itemProjectLi {
+  list-style-type: none;
+}

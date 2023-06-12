@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="addProject_News.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a145bb4fe3.js" crossorigin="anonymous"></script>
+
+
+    <script type="module" src="generalScript.js"></script>
+    <script type="module" src="editProject.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;1,200;1,300&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body class="editProjectHTML">
+    <div id="navbar">
+        <nav>
+            <!-- LOGO E MENU DE NAVEGAÇÃO -->
+
+            <div class="logo">LoremIpsum</div>
+            <div class="nav-items">
+                <button data-i18n="home" class="buttonNav homeBtn">Home</button>
+                <button data-i18n="OurProjects" class="buttonNav ourProjectsBtn">Projects</button>
+                <button data-i18n="OurTeam" class="buttonNav ourTeamBtn">Our Team</button>
+                <div class=" dropdownUser"> <button data-i18n="myAccount" class="buttonNav userNavBtn">My
+                        Account</button>
+                    <div class="dropdown-contentUser" id="dropdown-contentUser">
+                        <button data-i18n="addProject" class="buttonUser addProject">Add Project</button>
+                        <button data-i18n="myProjects" class="buttonUser myProjects">My projects</button>
+                        <button data-i18n="addNews" class="buttonUser addNews">Add News</button>
+                        <button data-i18n="myNews" class="buttonUser myNews">My news</button>
+                        <button data-i18n="adminButton" class="buttonAdmin">Admin Controller</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- botao perfil de user -->
+            <div class=" userProfileButtonDIV">
+                <button class="userProfileButton"> <i class="fa fa-user" aria-hidden="true"></i></button>
+            </div>
+            <!-- botao LOGOUT -->
+            <div class=" LogoutButtonDIV">
+                <button class="LogoutButton"> <i class="fa fa-sign-out" aria-hidden="true"></i></button>
+            </div>
+            <!-- menu Linguas -->
+            <div class=" dropdown">
+                <button class="dropbtn"><i class="fa fa-globe" aria-hidden="true"></i></button>
+                <div class="dropdown-content" id="dropdown-content">
+                    <button name="lang" class="en" value="en"><img
+                            src="https://raw.githubusercontent.com/lipis/flag-icons/c1efa9d9a94d62a4da54916f4061cbf9bbadff1d/flags/4x3/gb.svg"
+                            alt="">
+                    </button>
+                    <button name="lang" class="pt" value="pt"> <img
+                            src="https://raw.githubusercontent.com/lipis/flag-icons/c1efa9d9a94d62a4da54916f4061cbf9bbadff1d/flags/4x3/pt.svg"
+                            alt=""> </button>
+                </div>
+            </div>
+
+        </nav>
+    </div>
+
+    <!-- ERRO GERAL -->
+    <div class="generalError">
+        <h1 data-i18n="errorGeneral"> Sorry. The internet has failed you. <br>
+            We will redirect you to the index page, shortly.</h1>
+    </div>
+    <div class="errorMandatoryField-EditProject">
+        <h1 data-i18n="errorMandatoryField"> Please, fill the mandatory fields.</h1>
+    </div>
+
+    <div class="editProjectContainer">
+        <button data-i18n="Backtoyourproject" class="Backtoyourproject"> < Back to your projects </button>
+
+        <div class="container-Editproject">
+            <h1 class="editProject" data-i18n="editProject">Edit Project:</h1>
+
+            <div class="addProjectFormDiv editProject">
+                <form action="addNews" class="addProjectForm">
+                    <div class="InsertTitleNews">
+                        <label for="titleNewNews" data-i18n="projectTitleLabel">*Title:</label>
+                        <input class="titleNewNews" id="titleNewNews" type="text" name="text" />
+                    </div>
+
+                    <div class="InsertAuthorNews">
+                        <label for="authorNewNews" data-i18n="projectAuthorLabel"> Author:</label>
+                        <input disabled class="authorNewNews" id="authorNewNews" type="text" name="text" />
+                    </div>
+
+                    <div class="InsertDescriptionNews">
+                        <label for="descriptionNewNews" data-i18n="projectDescriptionLabel">
+                            Description:</label>
+                        <textarea class="descriptionNewNews" id="descriptionNewNews" name="text" rows="10" cols="30"
+                            wrap="soft"> </textarea>
+                    </div>
+
+                    <div class="InsertImageNews">
+                        <label for="imgNewNews" data-i18n="coverImageLabel">*Cover Image:</label>
+                        <input class="imgNewNews" id="imgNewNews" type="text" name="text" />
+                    </div>
+
+                    <div class="InsertKeywordsNews">
+                        <label for="keywordsNews" data-i18n="projectKeywordLabel">Keywords:</label>
+                        <input class="keywordsNews" id="keywordsNews" type="text" name="text" />
+                        <p data-i18n="DisclaimerKeywordLabel"> Each keyword should be separated by a blank
+                            space.</p>
+                    </div>
+
+                    <div class="selectVisibilty">
+                        <label for="visibilitySelect" data-i18n="visibilitySelect">Visibility:</label>
+                        <select class="visibilitySelect" id="visibilitySelect" name="Visibility">
+                            <option value="everyone" data-i18n="EveryoneOption">Everyone</option>
+                            <option value="membersOnly" data-i18n="membersOnlyOption" selected>Members Only
+                            </option>
+                            <option value="invisible" data-i18n="invisibleOption">Invisible</option>
+                        </select>
+
+                    </div>
+                    <button type="submit" class="btn-editProjectSave" data-i18n="btn-editProjectSave">Save
+                        Project</button>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="addCoauthorsContainer-EditProject" style="display: none;">
+            <button class="backTEditProject"> <i class="fa fa-arrow-left" aria-hidden="true"></i> </button>
+            <button class="nextToAssociateProjects-EditProject"> <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </button>
+            <h1 class="addnewNews" data-i18n="editCoauthor">Edit Co-author:</h1>
+            <ul class="coauthorsList-UL">
+
+            </ul>
+            
+     
+        </div>
+        <div class="addNewsToProjectContainer-EditProject" style="display: none;">
+            <button class="backToAddUsers-EditProject"> <i class="fa fa-arrow-left" aria-hidden="true"></i> </button>
+            <button class="finishAddProject-EditProject"> <i class="fa fa-arrow-right" aria-hidden="true"></i> </button>
+            <h1 class="addNewsToProjectH1-editProject" data-i18n="addProjectToNews">Associate Project to News:</h1>
+            <ul class="visibleProjects-UL">
+
+            </ul>
+
+       
+        </div>
+
+        <div id = "errorEditingProject" class="errorEditingProject" data-i18n="errorAddingProject"> An error has ocurred. Sorry. Please, try again
+            later.</div>
+        <div class="successEditingProject" data-i18n="successEditingProject"> Your project was successfully edit.
+        </div>
+    </div>
+
+</body>
+
+</html>
